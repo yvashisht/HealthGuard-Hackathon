@@ -11,6 +11,7 @@ import {
 } from "react-native";
 
 import { Button } from "react-native";
+import { SearchBar } from "../components/searchBar";
 
 interface ListItemProps {
   text: string;
@@ -67,6 +68,7 @@ const HomeScreen = ({ navigation }) => {
     <View style={styles.container}>
       <Text style={styles.header}>Contacts</Text>
       <ScrollView contentContainerStyle={styles.listContainer}>
+      <SearchBar/>
         {Object.keys(contactNumbers).map((contactName) => (
           <View key={contactName} style={{ marginBottom: 10 }}>
             <Button

@@ -6,6 +6,7 @@ export const SearchBar = () => {
     const [searchText, setSearchText] = useState("");
     const [submittedText, setSubmittedText] = useState("");
     
+    
     return (
         <View>
           <TextInput
@@ -18,7 +19,7 @@ export const SearchBar = () => {
           />
           <Text>{"https://www.google.com/search?q=" + submittedText}</Text>
 
-        </View>
+        </View >
     );
 
     //  async function googleSearch (text)
