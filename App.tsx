@@ -30,7 +30,7 @@ export default function App() {
         <Stack.Screen name="About Me" component={AboutMeScreen} />
         <Stack.Screen name="Settings" component={SettingsScreen} />
         <Stack.Screen name="MoodLog" component={MoodLog} />
-        <Stack.Screen name="Relapse Form" component={RelapseForm} />
+        <Stack.Screen name="RelapseForm" component={RelapseForm} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -50,17 +50,6 @@ const MyJourneyScreen = ({ navigation }) => {
       // Navigate to RelapseForm screen
       navigation.navigate('RelapseForm');
     }
-    // Here, you can save the selected option for the selected date
-  };
-
-  const renderSelectedMessage = () => {
-    if (selectedOption === 'Yes') {
-      return <Text style={{ fontSize: 20, marginTop: 20 }}>You selected Yes. Come back stronger!</Text>;
-    } else if (selectedOption === 'No') {
-      return <Text style={{ fontSize: 20, marginTop: 20 }}>Congratulations! You selected No.</Text>;
-    } else {
-      return null;
-    }
   };
 
   return (
@@ -96,7 +85,6 @@ const MyJourneyScreen = ({ navigation }) => {
             >
               <Text style={{ fontSize: 18, color: 'white' }}>No</Text>
             </TouchableOpacity>
-            {selectedOption && renderSelectedMessage()}
           </View>
         )}
       </View>
