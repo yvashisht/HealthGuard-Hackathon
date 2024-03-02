@@ -15,6 +15,7 @@ const HomeScreen = ({navigation}) => {
     { title: "About Me", navigateTo: "About Me" },
     { title: "Settings", navigateTo: "Settings" },
     { title: "MoodLog", navigateTo: "MoodLog" },
+    { title: "Relapse Form", navigateTo: "RelapseForm"}
     // Add more menu items here
   ];
 
