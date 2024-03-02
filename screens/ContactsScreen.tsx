@@ -70,7 +70,7 @@ const HomeScreen = ({ navigation }) => {
         {Object.keys(contactNumbers).map((contactName) => (
           <View key={contactName} style={{ marginBottom: 10 }}>
             <Button
-              title={`Call ${contactName}`}
+              title={`${contactName}`}
               onPress={() => handleItemClick(contactName)}
             />
           </View>
