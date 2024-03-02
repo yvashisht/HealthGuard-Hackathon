@@ -8,7 +8,7 @@ export const SearchBar = () => {
     
     
     return (
-        <View>
+        <View className="bg-white text-black p-2 rounded-lg border border-gray-300 shadow-sm">
           <TextInput
            id="search-form"
            className="search-input"
@@ -17,8 +17,7 @@ export const SearchBar = () => {
            value={searchText}
            placeholder="Enter Search Input"
           />
-          <Text>{"https://www.google.com/search?q=" + submittedText}</Text>
-
+          {/* <Text>{"https://www.google.com/search?q=" + submittedText}</Text> */}
         </View >
     );
 

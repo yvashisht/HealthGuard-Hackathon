@@ -1,17 +1,7 @@
-// screens/ContactScreen.tsx
 import React from "react";
-import {
-  View,
-  Text,
-  StyleSheet,
-  ScrollView,
-  TouchableOpacity,
-  Alert,
-  Linking,
-} from "react-native";
-
+import { View, Text, ScrollView, TouchableOpacity, Alert, Linking } from "react-native";
 import { Button } from "react-native";
-import { SearchBar } from "../components/searchBar";
+import { SearchBar } from '../components/searchBar';
 
 interface ListItemProps {
   text: string;
@@ -20,20 +10,18 @@ interface ListItemProps {
 
 const ListItem: React.FC<ListItemProps> = ({ text, onPress }) => {
   return (
-    <TouchableOpacity onPress={onPress}>
-      <Text style={styles.item}>{text}</Text>
+    <TouchableOpacity onPress={onPress} className="p-2">
+      <Text className="text-base">{text}</Text>
     </TouchableOpacity>
   );
 };
 
 const HomeScreen = ({ navigation }) => {
-  // Define your dictionary of contacts with names as keys and phone numbers as values
   const contactNumbers = {
     "Alberta 24/7 Helpline": "18773032642",
     "Alberta Health Link": "811",
     "National Overdose Response Service (NORS)": "18886886677",
     // Add more contacts as needed
-    // this is added to a scrollable list, so can make as long as we can
   };
 
   const handlePhoneCall = (contactName, phoneNumber) => {
@@ -54,7 +42,6 @@ const HomeScreen = ({ navigation }) => {
     );
   };
 
-  // Function to handle the button press for a specific contact
   const handleItemClick = (contactName) => {
     const phoneNumber = contactNumbers[contactName];
     if (phoneNumber) {
@@ -65,14 +52,14 @@ const HomeScreen = ({ navigation }) => {
   };
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.header}>Contacts</Text>
-      <ScrollView contentContainerStyle={styles.listContainer}>
-      <SearchBar/>
+    <View className="bg-blue-100 flex-1 items-center justify-start pt-12 p-2">
+      <Text className="text-xl font-bold mb-4">Contacts</Text>
+      <ScrollView className="w-full" contentContainerStyle={{ alignItems: 'center' }}>
+        <SearchBar />
         {Object.keys(contactNumbers).map((contactName) => (
-          <View key={contactName} style={{ marginBottom: 10 }}>
+          <View key={contactName} className="mb-2 w-11/12">
             <Button
-              title={`Call ${contactName}`}
+              title={`${contactName}`}
               onPress={() => handleItemClick(contactName)}
             />
           </View>
@@ -81,25 +68,5 @@ const HomeScreen = ({ navigation }) => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  header: {
-    fontSize: 24,
-    fontWeight: "bold",
-    marginBottom: 16,
-  },
-  listContainer: {
-    alignItems: "flex-start",
-  },
-  item: {
-    fontSize: 18,
-    marginBottom: 8,
-  },
-});
 
 export default HomeScreen;

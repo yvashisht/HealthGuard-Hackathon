@@ -57,7 +57,7 @@ const RelapseForm = ({ navigation }) => {
   };
 
   return (
-    <ScrollView contentContainerStyle={styles.container}>
+    <ScrollView className='bg-blue-100' contentContainerStyle={styles.container}>
       <Calendar
         style={styles.calendar}
         onDayPress={handleDateSelect}

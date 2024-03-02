@@ -76,7 +76,7 @@ const MoodLog = () => {
     <ScrollView>
       {emotions.map((emotion, index) => (
         moodDatasets[emotion] ? (
-          <View key={index} style={{ alignItems: 'center', justifyContent: 'center', paddingTop: 20 }}>
+          <View className='bg-blue-100' key={index} style={{ alignItems: 'center', justifyContent: 'center', paddingTop: 20 }}>
             <Text style={{ fontSize: 24, marginBottom: 20 }}>{emotion}</Text>
             <LineChart
               data={moodDatasets[emotion]}

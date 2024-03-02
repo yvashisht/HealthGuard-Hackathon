@@ -60,7 +60,7 @@ const JournalScreen = () => {
   };
 
   return (
-    <ScrollView className="p-4">
+    <ScrollView className="bg-blue-100 px-5">
       <Text className="text-xl font-bold mb-4">Today's Journal</Text>
       {emotions.map((emotion) => (
         <View key={emotion} className="mb-6">

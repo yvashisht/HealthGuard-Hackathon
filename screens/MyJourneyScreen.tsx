@@ -53,7 +53,7 @@ const MyJourneyScreen = ({ navigation }) => {
   };
 
   return (
-    <View style={{ flex: 1 }}>
+    <View className='bg-blue-100' style={{ flex: 1 }}>
       <View style={{ alignItems: 'center', marginTop: 20 }}>
         <Calendar
           style={{ marginBottom: 20 }}

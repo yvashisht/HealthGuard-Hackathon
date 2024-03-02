@@ -26,7 +26,7 @@ export default function App() {
         <Stack.Screen name="Journal" component={JournalScreen} />
         <Stack.Screen name="ViewJournalEntries" component={ViewJournalEntriesScreen} />
         <Stack.Screen name="Contacts" component={ContactsScreen} />
-        <Stack.Screen name="Appointments" component={AppointmentsScreen} />
+        {/* <Stack.Screen name="Appointments" component={AppointmentsScreen} /> */}
         <Stack.Screen name="About Me" component={AboutMeScreen} />
         <Stack.Screen name="Settings" component={SettingsScreen} />
         <Stack.Screen name="MoodLog" component={MoodLog} />
