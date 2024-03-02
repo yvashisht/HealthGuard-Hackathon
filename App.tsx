@@ -13,6 +13,7 @@ import AppointmentsScreen from './screens/AppointmentsScreen';
 import AboutMeScreen from './screens/AboutMeScreen';
 import ViewJournalEntriesScreen from './screens/ViewJournalEntriesScreen';
 import MoodLog from './screens/MoodLog';
+import RelapseForm from './screens/RelapseForm';
 
 const Stack = createNativeStackNavigator();
 
@@ -24,11 +25,12 @@ export default function App() {
         <Stack.Screen name="My Journey" component={MyJourneyScreen} />
         <Stack.Screen name="Journal" component={JournalScreen} />
         <Stack.Screen name="ViewJournalEntries" component={ViewJournalEntriesScreen} />
-        <Stack.Screen name="MoodLog" component={MoodLog} />
         <Stack.Screen name="Contacts" component={ContactsScreen} />
         <Stack.Screen name="Appointments" component={AppointmentsScreen} />
         <Stack.Screen name="About Me" component={AboutMeScreen} />
         <Stack.Screen name="Settings" component={SettingsScreen} />
+        <Stack.Screen name="MoodLog" component={MoodLog} />
+        <Stack.Screen name="Relapse Form" component={RelapseForm} />
       </Stack.Navigator>
     </NavigationContainer>
   );

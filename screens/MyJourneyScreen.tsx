@@ -45,6 +45,11 @@ const MyJourneyScreen = ({ navigation }) => {
     };
     setMarkedDates(updatedMarkedDates);
     saveMarkedDates(updatedMarkedDates); // Save marked dates
+
+    if (option === 'Yes') {
+      // Navigate to RelapseForm screen
+      navigation.navigate('RelapseForm');
+    }
     // Here, you can save the selected option for the selected date
   };
 
