@@ -10,12 +10,12 @@ const HomeScreen = ({navigation}) => {
     { title: "My Journey", navigateTo: "My Journey" },
     { title: "Journal", navigateTo: "Journal" },
     { title: "View Journal Entries", navigateTo: "ViewJournalEntries" },
+    { title: "MoodLog", navigateTo: "MoodLog" },
     { title: "Contacts", navigateTo: "Contacts" },
+    { title: "Relapse Form", navigateTo: "RelapseForm"},
     { title: "Appointments", navigateTo: "Appointments" },
     { title: "About Me", navigateTo: "About Me" },
     { title: "Settings", navigateTo: "Settings" },
-    { title: "MoodLog", navigateTo: "MoodLog" },
-    { title: "Relapse Form", navigateTo: "RelapseForm"}
     // Add more menu items here
   ];
 
