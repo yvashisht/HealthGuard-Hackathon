@@ -9,6 +9,7 @@ const HomeScreen = ({navigation}) => {
   const menuItems = [
     { title: "My Journey", navigateTo: "My Journey" },
     { title: "Journal", navigateTo: "Journal" },
+    { title: "View Journal Entries", navigateTo: "ViewJournalEntries" },
     { title: "Contacts", navigateTo: "Contacts" },
     { title: "Appointments", navigateTo: "Appointments" },
     { title: "About Me", navigateTo: "About Me" },

@@ -1,0 +1,6 @@
+module Pods_HealthGuard {
+  umbrella header "Pods-HealthGuard-umbrella.h"
+
+  export *
+  module * { export * }
+}
