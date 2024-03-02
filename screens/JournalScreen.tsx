@@ -5,13 +5,19 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const JournalScreen = () => {
   const [freeEntry, setFreeEntry] = useState('');
-  const emotions = ['Happy', 'Sad', 'Anxious', 'Energetic', 'Angry'];
+  const emotions = ['Hopeless', 'Angry', 'Irritable', 'Anxious', 'Sad', 'Lonely', 'Content', 'Calm', 'Comfortable','Safe', 'Joyful'];
   const [ratings, setRatings] = useState({
-    Happy: 0,
-    Sad: 0,
-    Anxious: 0,
-    Energetic: 0,
+    Hopeless: 0,
     Angry: 0,
+    Irritable: 0,
+    Anxious: 0,
+    Sad: 0,
+    Lonely: 0,
+    Content: 0,
+    Calm: 0,
+    Comfortable: 0,
+    Safe: 0,
+    Joyful: 0,
   });
 
   const handleRating = (emotion, rating) => {
@@ -33,7 +39,19 @@ const JournalScreen = () => {
       await AsyncStorage.setItem('journalEntries', JSON.stringify(newEntries));
       Alert.alert('Journal Saved', 'Your journal entry has been saved successfully.');
 
-      setRatings({ Happy: 0, Sad: 0, Anxious: 0, Energetic: 0, Angry: 0 });
+      setRatings({
+        Hopeless: 0,
+        Angry: 0,
+        Irritable: 0,
+        Anxious: 0,
+        Sad: 0,
+        Lonely: 0,
+        Content: 0,
+        Calm: 0,
+        Comfortable: 0,
+        Safe: 0,
+        Joyful: 0,
+      });
       setFreeEntry('');
     } catch (error) {
       Alert.alert('Error', 'There was an error saving your journal entry.');
