@@ -7,7 +7,7 @@ import { Button } from 'react-native';
 const HomeScreen = ({navigation}) => {
   return (
     <View>
-      <Text>Contact Screen</Text>
+      <Text>Relapse Screen</Text>
     </View>
   );
 };
